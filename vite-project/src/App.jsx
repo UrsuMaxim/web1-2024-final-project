@@ -7,17 +7,18 @@ import Questions from './Components/Questions/Questions'
 import Reviews from './Components/Reviews/Reviews'
 import Subscribe from './Components/Subscribe/Subscribe'
 import Portofoliu from './Components/Potofoliu/Portofoliu'
+import Middle from './Components/Middle/Middle'
 
 function App() {
   return (
     <div>
       <Navbar/>
       <Home/>
-      
+      <Middle/>
+      <Destinations/>
     </div>
   )
 }
-// <Destinations/>
 // <Portofoliu/>
 // <Reviews/>
 // <Questions/>

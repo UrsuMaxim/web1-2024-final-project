@@ -1,1 +1,46 @@
-/*# sourceMappingURL=Destinations.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.destination {
+    .secContainer {
+        .redText {
+            color: hsl(14, 90%, 53%);
+            font-size: 0.813rem;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        .searchField {
+            margin-top: 2rem;
+            gap: 1rem;
+
+            .inputField {
+                background: hsl(14, 96%, 91%);
+                padding: 1rem;
+                border-radius: 3rem;
+                gap: .5rem;
+
+                input {
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                }
+
+                .icon{
+                    color: hsl(0, 0%, 18%);
+                }
+            }
+
+            .btn{
+                gap: .5rem;
+                margin: auto;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
