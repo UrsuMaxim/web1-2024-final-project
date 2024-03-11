@@ -10,8 +10,9 @@
     width: 100%;
     padding: 1.5rem 2rem;
     position: fixed;
-    border-bottom: 1.5px solid hsl(14, 90%, 53%);
+    border-bottom: 1.5px solid rgb(198, 198, 198);
     backdrop-filter: blur(5px);
+    z-index: 1000;
 }
 
 .logoDiv {

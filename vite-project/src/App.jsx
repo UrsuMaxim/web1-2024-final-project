@@ -12,11 +12,11 @@ function App() {
   return (
     <div>
       <Navbar/>
+      <Home/>
       
     </div>
   )
 }
-// <Home/>
 // <Destinations/>
 // <Portofoliu/>
 // <Reviews/>
