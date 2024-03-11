@@ -1,1 +1,87 @@
-/*# sourceMappingURL=Navbar.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    position: fixed;
+    border-bottom: 1.5px solid hsl(14, 90%, 53%);
+    backdrop-filter: blur(5px);
+}
+
+.logoDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        color: hs1(0, 0%, 18%);
+        font-size: 1rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        position: absolute;
+        width: 70%;
+        top: 3rem;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50px);
+        background: rgba(255,255, 255, 0.94);
+        padding: 2rem;
+        border-radius: 10px;
+        transition: .8s ease-in-out;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
+
+          li {
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 1rem 0;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+                color: hsl(14, 90%, 53%);
+                border-bottom: 1.5px solid hsl(14, 90%, 53%);
+
+            }
+        }
+    }
+
+}
+
+.menuIcon,
+.closeIcon {
+    font-size: 2rem;
+
+    &:hover {
+        color: hsl(14, 90%, 53%);
+    }
+
+}
+
+.closeIcon {
+    position: absolute;
+    bottom: -15px;
+    right: 50%;
+    left: 50%;
+    color: hsl(0, 0%, 18%);
+    transform: translate(-50%);
+}
+
+ .showNavBar{
+    top: 8rem;
+ }
+
+
+
+ .remove{
+    display: none;
+ }
