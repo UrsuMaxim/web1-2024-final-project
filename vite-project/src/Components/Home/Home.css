@@ -5,43 +5,56 @@
     height: 95vh;
     width: 100%;
     top: 0;
+
+    .videoBg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .sectionText {
+        position: absolute;
+        height: 100%;
+        top: 30%;
+        bottom: 50%;
+        color: hsl(0, 0%, 100%);
+        padding: 0 1.3rem;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+        p {
+            padding: 1rem 0;
+            font-size: 0.938rem;
+            font-weight: 500;
+        }
+
+        .btn {
+            gap: .5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    .popularPlaces{
+        display: none;
+    }
 }
 
-.videoBg {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
 
-video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
-.sectionText {
-    position: absolute;
-    height: 100%;
-    top: 30%;
-    bottom: 50%;
-    color: hsl(0, 0%, 100%);
-    padding: 0 1.3rem;
-}
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
-}
 
-p {
-    padding: 1rem 0;
-    font-size: 0.938rem;
-    font-weight: 500;
-}
 
-.btn {
-    gap: .5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 1rem;
-}
+
+

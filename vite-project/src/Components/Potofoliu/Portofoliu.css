@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+.portofoliu {
+    .secContainer {
+        gap: 2rem;
+
+        .leftContent {
+            .grid {
+                .singlePortofoliu {
+                    gap: 1rem;
+                    align-items: flex-start;
+
+                    .iconDiv {
+                        img {
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+
+                    .infor {
+                        h4 {
+                            padding-bottom: 0.5rem;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

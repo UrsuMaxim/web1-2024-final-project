@@ -11,16 +11,18 @@ import Middle from './Components/Middle/Middle'
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar/>
       <Home/>
       <Middle/>
       <Destinations/>
-    </div>
+      <Portofoliu/>
+      <Reviews/>
+    </>
   )
 }
-// <Portofoliu/>
-// <Reviews/>
+
+
 // <Questions/>
 // <Subscribe/>
 // <Footer/> 

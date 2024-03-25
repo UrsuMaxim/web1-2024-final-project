@@ -1,0 +1,57 @@
+.review {
+    .secContainer {
+        .textDiv {
+            .redText {
+                font-size: 0.813rem;
+                display: block;
+                color: hsl(14, 90%, 53%);
+                font-weight: 700;
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                color: hsl(0, 0%, 18%);
+                padding: 1rem 0;
+            }
+
+            p {
+                color: hsl(0, 0%, 18%);
+            }
+
+            .stars {
+                gap: 0.4rem;
+                padding: 1rem 0;
+
+                .icon {
+                    color: hsl(14, 90%, 53%);
+                    font-size: 1rem;
+
+                }
+            }
+
+            .clientsImages {
+                gap: 1rem;
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid rgb(255, 255, 255);
+                    box-shadow: 0 0 2px 2px rgb(251, 212, 194);
+                }
+            }
+        }
+
+        .imgDiv {
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+    
+            #imgClient {
+                object-fit: cover;
+            }
+        }
+     }
+}

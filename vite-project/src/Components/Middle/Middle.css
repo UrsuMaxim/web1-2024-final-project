@@ -3,32 +3,31 @@
 
 .middle {
     width: 100%;
-}
 
-.secContainer {
-    .grid {
-        padding: 3rem;
-        border-radius: 3rem;
-        background: hsl(14, 96%, 91%);
-        justify-content: center;
-        margin: auto;
-        gap: 2rem;
-    }
+    .secContainer {
+        .grid {
+            padding: 3rem;
+            border-radius: 3rem;
+            background: hsl(14, 96%, 91%);
+            justify-content: center;
+            margin: auto;
+            gap: 2rem;
 
-    h1 {
-        font-size: 2rem;
-        font-weight: 700;
-        color: hsl(0, 0%, 18%);
-    }
+            span {
+                justify-content: center;
+                gap: .5rem;
 
-    p {
-        opacity: .8;
-        max-width: 80px;
-    }
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: hsl(0, 0%, 18%);
+                }
 
-
-    span {
-        justify-content: center;
-        gap: .5rem;
+                p {
+                    opacity: .8;
+                    max-width: 80px;
+                }
+            }
+        }
     }
 }
