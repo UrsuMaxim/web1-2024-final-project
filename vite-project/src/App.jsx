@@ -18,13 +18,12 @@ function App() {
       <Destinations/>
       <Portofoliu/>
       <Reviews/>
+      <Questions/>
+      <Subscribe/>
+      <Footer/> 
     </>
   )
-}
+};
 
-
-// <Questions/>
-// <Subscribe/>
-// <Footer/> 
 
 export default App

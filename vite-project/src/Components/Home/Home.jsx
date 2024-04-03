@@ -3,6 +3,12 @@ import "./Home.css";
 import Video from '../../Assets/homeBg.mp4'
 import { AiOutlineSwapRight } from "react-icons/ai";
 
+import image1 from '../../Assets/image1.jpg';
+import image2 from '../../Assets/image2.jpg';
+import image3 from '../../Assets/image3.png';
+import image4 from "../../Assets/image4.jpg";
+
+
 const Home = () => {
     return (
         <div className="Home">
@@ -21,10 +27,12 @@ const Home = () => {
             <div className="popularPlaces">
                 <div className="content">
                     <h3>Popular Places</h3>
-                    {/* <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" />
-                    <img src="" alt="" /> */}
+                    <div className="images flex">
+                        <img src={image1} alt="" />
+                        <img src={image2} alt="" />
+                        <img src={image3} alt="" />
+                        <img src={image4} alt="" />
+                    </div>
                 </div>
             </div>
         </div>

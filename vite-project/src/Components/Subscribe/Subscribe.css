@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+.grid{
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3rem;
+    padding: 0.8rem 1rem;
+    color: hsl(0, 0%, 100%);
+    background: hsl(14, 90%, 53%);
+
+    &:hover{
+        transition: .3s ease;
+    }
+}
+
+
+
+
+
+
+.btn:hover{
+    color: hsl(14, 90%, 53%);
+    background: hsl(14, 96%, 91%);
+}
+
+
+
+.container{
+    padding-left: 1.5rem;
+    padding: 4rem 0 2rem;
+    padding-right: 1.5rem;
+}
+
+
+.subscribe{
+    .secContainer{
+        .textDiv{
+            h4{
+                font-size: 1.25rem;
+                color: hsl(0, 0%, 18%);
+            }
+
+            p{
+            
+                font-size: 0.813rem;
+                padding: 1rem 0;
+            }
+
+
+            .btn{
+                padding: .5rem 2rem;
+            }
+        }
+    }
+}

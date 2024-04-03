@@ -4,7 +4,7 @@ import "./Portofoliu.css";
 import icon1 from '../../Assets/icon1.png';
 import icon2 from '../../Assets/icon2.png';
 import icon3 from '../../Assets/icon3.png';
-import image from "../../Assets/image.jpg"
+import image from "../../Assets/image.jpg";
 
 
 const Portofoliu = () => {
