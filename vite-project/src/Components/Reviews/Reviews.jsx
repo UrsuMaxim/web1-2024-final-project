@@ -3,7 +3,7 @@ import "./Reviews.css";
 import { AiFillStar } from "react-icons/ai";
 
 import Client1 from "../../Assets/client1.jpg";
-import Client2 from "../../Assets/client2.jpg";
+import Client2 from "../../Assets/ladysClients.jpg";
 import Client3 from "../../Assets/client3.jpg";
 import Client4 from "../../Assets/client4.jpg";
 import Client5 from "../../Assets/client5.jpg";

@@ -64,7 +64,7 @@ img, video {
 }
 
 .secTitle {
-    display: none;
+    display: grid;
     text-align: center;
     padding: 1rem 0;
     font-size: 25px;
@@ -77,6 +77,10 @@ img, video {
         font-size: 0.938rem;
         font-weight: 400;
 
+    }
+
+    h3{
+        font-size: 2rem;
     }
 }
 
@@ -118,4 +122,18 @@ img, video {
     width: 10px;
     background: hsl(14, 96%, 53%);
     border-radius: 3rem;
+}
+
+
+/* MEDIA QUERIE */
+
+@media screen and (min-width: 840px) {
+    .section{
+        padding: 4rem 0 3rem;
+    }
+
+    .container{
+        width: 75%;
+        margin: auto;
+    }
 }

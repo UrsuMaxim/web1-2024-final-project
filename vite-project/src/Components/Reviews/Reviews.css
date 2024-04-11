@@ -44,7 +44,7 @@
         }
 
         .imgDiv {
-            height: 40%;
+            height: 60%;
             width: 100%;
             
     
@@ -55,4 +55,117 @@
             }
         }
      }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 480px) {
+    .review{
+        .secContainer{
+            .textDiv{
+                .redText{
+                    font-size: 0.938rem;
+                }
+
+                h3{
+                    font-size: 20px;
+                    color: hsl(0, 0%, 18%);
+                }
+
+                p{
+                    color: hsl(0, 0%, 18%);
+                    font-size: 0.938rem;
+
+                }
+
+                .stars{
+                    .icon{
+                        font-size: 1.25rem;
+                    }
+                }
+
+                .clientsImages{
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+
+            .imgDiv{
+                height: 250px;
+                width: 100%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .review{
+        .secContainer{
+            grid-template-columns: repeat(2,1fr);
+        
+            .textDiv{
+                .redText{
+                    font-size: 0.938rem;
+                }
+
+                h3{
+                    font-size: 0.938rem;
+                    color: 0.938rem;
+                }
+
+                p{
+                    color: hsl(0, 0%, 18%);
+                    font-size: 0.938rem;
+                }
+
+                .stars{
+                    .icon{
+                        font-size: 1.25rem;
+                    }
+                }
+
+                .clientsImages{
+                    img{
+                        height: 50px;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .review{
+        .secContainer{
+            gap: 3rem;
+
+            .textDiv{
+                .redText{
+                    font-size: 1rem;
+                }
+
+                h3{
+                    font-size: 1rem;
+                    color: hsl(0, 0%, 18%);
+                }
+
+                p{
+                    color: hsl(0, 0%, 18%);
+                    font-size: 1rem;
+                    line-height: 2rem;
+                }
+            }
+        
+            .imgDiv{
+                height: 300px;
+            }
+        }
+    }
 }

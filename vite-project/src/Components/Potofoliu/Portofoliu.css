@@ -29,3 +29,144 @@
         }
     }
 }
+
+/* MEDIA QUERIE */
+
+@media screen and (min-width: 480px) {
+    .portofoliu{
+        .secContainer{
+            grid-template-columns: repeat(1, 1fr);
+            .leftContent{
+                .secHeading{
+                    h3{
+                        font-size: 1.25rem;
+                    }
+                    p{
+                        font-size: 0.938rem;
+                        padding: .5rem 0;
+                    }
+                }
+
+                .grid{
+                    .singlePortofoliu{
+                        gap: 1.5rem;
+                        
+                        .iconDiv{
+                            img{
+                                height: 60px;
+                                width: 60px;
+                            }
+                        }
+
+                        .infor{
+                            h4{
+                                padding-bottom: .5rem;
+                                font-size: 1rem;
+                            }
+                            p{
+                                font-size: 0.938rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (min-width: 660px) {
+    .portofoliu{
+        .secContainer{
+            .leftContent{
+                .secHeading{
+
+                    h3{
+                        font-size: 2rem;
+                    }
+
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+
+                .grid{
+                    grid-template-columns: repeat(2,1fr);
+                    .singlePortofoliu{
+                        gap: 1.5rem;
+                    }
+                }
+            }
+
+            .rightContent{
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin: auto;
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .portofoliu{
+        .secContainer{
+            grid-template-columns: repeat(2,1fr);
+
+            .leftContent{
+                .secHeading{
+                    h3{
+                        font-size: 1.25rem;
+                    }
+
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                .grid{
+                    grid-template-columns: repeat(1,1fr);
+                    .singlePortofoliu{
+                        gap: 1.5rem;
+                    }
+                }
+            }
+
+            .rightContent{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .portofoliu{
+        .secContainer{
+            gap: 3rem;
+
+            .leftContent{
+                .secHeading{
+                    h3{
+                        font-size: 2rem;
+                    }
+
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+
+                .grid{
+                    gap: 2.5rem;
+                    margin-top: 3rem;
+                    .singlePortofoliu{
+                        gap: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 
-.grid{
+.grid {
     display: grid;
     align-items: center;
     gap: 1.5rem;
 }
 
 
-.btn{
+.btn {
     border: none;
     outline: none;
     cursor: pointer;
@@ -17,7 +17,7 @@
     color: hsl(0, 0%, 100%);
     background: hsl(14, 90%, 53%);
 
-    &:hover{
+    &:hover {
         transition: .3s ease;
     }
 }
@@ -27,37 +27,107 @@
 
 
 
-.btn:hover{
+.btn:hover {
     color: hsl(14, 90%, 53%);
     background: hsl(14, 96%, 91%);
 }
 
 
 
-.container{
+.container {
     padding-left: 1.5rem;
     padding: 4rem 0 2rem;
     padding-right: 1.5rem;
 }
 
 
-.subscribe{
-    .secContainer{
-        .textDiv{
-            h4{
+.subscribe {
+    .secContainer {
+        .textDiv {
+            h4 {
                 font-size: 1.25rem;
                 color: hsl(0, 0%, 18%);
             }
 
-            p{
-            
+            p {
+
                 font-size: 0.813rem;
                 padding: 1rem 0;
             }
 
 
-            .btn{
+            .btn {
                 padding: .5rem 2rem;
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 480px) {
+    .subscribe {
+        .secContainer {
+            img {
+                max-width: 75%;
+                margin: auto;
+            }
+
+            .textDiv {
+                h4 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    padding: 1rem 0;
+                    font-size: 1rem;
+                }
+
+                .btn {
+                    padding: .5rem 2rem;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .subscribe {
+        .secContainer {
+            grid-template-columns: repeat(2, 1fr);
+
+            img {
+                max-width: 100%;
+                margin: auto;
+            }
+
+            .textDiv {
+                h4 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    padding: 1rem 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .subscribe{
+        .secContainer{
+            .textDiv{
+                h4{
+                    font-size: 2rem;
+                }
+
+                p{
+                    padding: 2rem 0;
+                    font-size: 1.25rem;
+                }
             }
         }
     }
