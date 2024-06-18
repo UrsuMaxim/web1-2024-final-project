@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import {AiFillInstagram} from "react-icons/ai"
+import { AiFillInstagram } from "react-icons/ai"
 import { BiLogoMediumOld } from "react-icons/bi";
 import { ImFacebook } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
@@ -37,12 +37,12 @@ const Footer = () => {
                         </li>
                     </div>
 
-                    <div className="footerLinks">
-                        <span className="linkTitle">Contact Details</span>
-                        <span className="phone">+076 063 004</span>
-                        <span className="email">ursu.maxim2004@gmail.com</span>
-                        
-                    </div>
+
+                </div>
+                <div className="footerLinks">
+                    <span className="linkTitle">Contact Details</span>
+                    <span className="phone">+076 063 004</span>
+                    <span className="email">ursu.maxim2004@gmail.com</span>
                 </div>
             </div>
         </div>

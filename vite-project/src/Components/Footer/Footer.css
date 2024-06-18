@@ -19,7 +19,7 @@
                 padding-bottom: .5rem;
 
                 .icon{
-                    font-size: 25px;
+                    font-size: 30px;
                     color: hsl(0, 0%, 18%);
                 }
             }
@@ -30,10 +30,10 @@
                 justify-content: center;
 
                 .icon{
-                    font-size: 25px;
+                    font-size: 30px;
                     background: hsl(14, 90%, 53%);
                     border-radius: 50%;
-                    padding: 8px;
+                    padding: 5px;
                     color: hsl(0, 0%, 100%);
                     &:hover{
                         background: hsl(15, 60%, 4%);
@@ -43,12 +43,13 @@
         }
         .footerLinks{
             display: grid;
-            row-gap: .2rem;
+            row-gap: .3rem;
             
             .linkTitle{
                 padding-bottom: .5rem;
                 color: hsl(0, 0%, 18%);
                 font-weight: 700;
+                font-size: 17px;
             }
 
             li{
@@ -62,7 +63,7 @@
 
             a, .phone, .email{
                 color: hsl(0, 0%, 18%);
-                font-size: 13px;
+                font-size: 17px;
                 font-weight: 500;
             }
         }
@@ -83,8 +84,3 @@
     }
 }
 
-@media screen and (min-width: 640px) {
-    .secContainer{
-        grid-template-columns: repeat(4, 1fr);
-    }
-}

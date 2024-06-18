@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-
-
-
 .navBar {
     display: flex;
     align-items: center;
@@ -21,13 +18,11 @@
         justify-content: center;
 
         span {
-            color: hs1(0, 0%, 18%);
+            color: hsl(0, 0%, 18%);
             font-size: 1rem;
             justify-content: center;
         }
-
     }
-
 
     @media screen and (max-width: 767px) {
         .menu {
@@ -67,11 +62,9 @@
                 &:hover {
                     color: hsl(14, 90%, 53%);
                     border-bottom: 1.5px solid hsl(14, 90%, 53%);
-
                 }
             }
         }
-
     }
 
     .menuIcon,
@@ -81,7 +74,6 @@
         &:hover {
             color: hsl(14, 90%, 53%);
         }
-
     }
 
     .closeIcon {
@@ -97,16 +89,22 @@
         top: 8rem;
     }
 
-
-
     .remove {
         display: none;
     }
+}
 
+/* Stiluri pentru link-uri */
+.navLink {
+    text-decoration: none; /* Elimină sublinierea implicită */
+    color: hsl(0, 0%, 18%); /* Culoarea textului */
+}
+
+.navLink:active {
+    color: hsl(14, 90%, 53%); /* Culoarea textului la click */
 }
 
 /* MEDIA QUERIES */
-
 @media screen and (min-width: 768px) {
     .navBar {
         .logoDiv {
@@ -141,20 +139,21 @@
         }
     }
 }
- 
-@media screen  and (min-width: 1240px){
-    .navBar{
+
+@media screen and (min-width: 1240px) {
+    .navBar {
         padding: 2rem 6rem;
-        .menu{
-            ul{
+
+        .menu {
+            ul {
                 gap: 4rem;
             }
         }
-    } 
+    }
 }
 
-@media screen  and (min-width: 1440px){
-    .navBar{
+@media screen and (min-width: 1440px) {
+    .navBar {
         padding: 2rem 14rem;
-    } 
+    }
 }

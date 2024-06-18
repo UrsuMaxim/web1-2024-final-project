@@ -17,8 +17,8 @@ function App() {
       <Middle/>
       <Destinations/>
       <Portofoliu/>
-      <Reviews/>
       <Questions/>
+      <Reviews/>
       <Subscribe/>
       <Footer/> 
     </>
