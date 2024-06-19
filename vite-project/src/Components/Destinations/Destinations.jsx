@@ -35,6 +35,8 @@ const Destinations = () => {
     const [date, setDate] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [showNoResults, setShowNoResults] = useState(false);
+    const [selectedDestination, setSelectedDestination] = useState(null);
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         Aos.init({ duration: 2000 });
@@ -43,12 +45,17 @@ const Destinations = () => {
     const handleCategoryClick = (category) => {
         setSelectedCategory(category);
         setShowNoResults(false);
+        filterDestinations(category);
     };
 
     const handleSearch = () => {
+        filterDestinations(selectedCategory);
+    };
+
+    const filterDestinations = (category) => {
         const filteredDestinations = destinations.filter(destination => {
             return (
-                (selectedCategory === 'All' || destination.category === selectedCategory) &&
+                (category === 'All' || destination.category === category) &&
                 (!location || destination.location.toLowerCase().includes(location.toLowerCase())) &&
                 (!budget || destination.price >= parseFloat(budget)) &&
                 (!date || destination.date >= date)
@@ -68,8 +75,18 @@ const Destinations = () => {
         setShowNoResults(false);
     };
 
+    const handleDetails = (destination) => {
+        setSelectedDestination(destination);
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+        setSelectedDestination(null);
+    };
+
     return (
-        <div className="destination section container ">
+        <div className="destination section container">
             <div className="secContainer">
                 <div className="secTitle">
                     <span className="redText" data-aos='fade-up'>EXPLORE NOW</span>
@@ -134,7 +151,7 @@ const Destinations = () => {
                 <div className="destinationContainer grid">
                     {(searchResults.length === 0 && !showNoResults ? destinations : searchResults).map(destination => (
                         <div className="singleDestination" key={destination.id} data-aos='fade-up'>
-                            <div className="imgDiv">
+                            <div className="imgDiv" onClick={() => handleDetails(destination)}>
                                 <img src={destination.img} alt="Destination" />
                                 <div className="descInfo flex">
                                     <div className="text">
@@ -152,6 +169,39 @@ const Destinations = () => {
                     ))}
                 </div>
             </div>
+
+            {selectedDestination && (
+                <div className={`modal ${showModal ? 'show' : ''}`}>
+                    <div className="modal-content">
+                        <span className="close" onClick={closeModal}>&times;</span>
+                        <h2>{selectedDestination.name}</h2>
+                        <img src={selectedDestination.img} alt={selectedDestination.name} />
+                        <p><strong>Location:</strong> {selectedDestination.location}</p>
+                        <p><strong>Rating:</strong> {selectedDestination.rating}</p>
+                        <p><strong>Price:</strong> ${selectedDestination.price}</p>
+                        <p><strong>Date:</strong> {selectedDestination.date}</p>
+                        {/* Adaugă un formular pentru comandă */}
+                        <div className="orderForm">
+                            <h3>Make a Reservation</h3>
+                            <form>
+                                <div className="formField">
+                                    <label htmlFor="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required />
+                                </div>
+                                <div className="formField">
+                                    <label htmlFor="email">Email</label>
+                                    <input type="email" id="email" name="email" required />
+                                </div>
+                                <div className="formField">
+                                    <label htmlFor="phone">Phone Number</label>
+                                    <input type="text" id="phone" name="phone" required />
+                                </div>
+                                <button type="submit">Submit Reservation</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

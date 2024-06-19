@@ -142,16 +142,7 @@
    
     
 }
-.noResults {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 1.25rem;
-    color: hsl(0, 0%, 50%);
-}
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 520px) {
